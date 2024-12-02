@@ -81,3 +81,33 @@ public class main {
     }
 }
 
+/**
+ * The ArrayManager
+ */
+class ArrayManager {
+    private String[] array; // Array to hold strings
+    private int size;      // Size of the array
+    private int currentIndex; // Index for insertion
+
+    /**
+     * Constructor for ArrayManager
+     *
+     * @param size The maximum number of strings the array can hold.
+     */
+    public ArrayManager(int size) {
+        this.size = size;
+        this.array = new String[size];
+        this.currentIndex = 0; // Start at index 0
+    }
+
+    public int get(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'get'");
+    }
+
+    public void insert(String value1) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'insert'");
+    }
+
+}
