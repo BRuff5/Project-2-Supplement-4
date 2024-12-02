@@ -100,14 +100,23 @@ class ArrayManager {
         this.currentIndex = 0; // Start at index 0
     }
 
-    public int get(int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'get'");
+    /**
+     * Inserts a string an array
+     *
+     * @param value The string to be inserted into the array.
+     */
+    public void insert(String value) {
+        array[currentIndex] = value; 
+        currentIndex = (currentIndex + 1) % size; 
     }
 
-    public void insert(String value1) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insert'");
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (String s : array) {
+            sb.append(s).append(" ");
+        }
+        return sb.toString().trim(); 
     }
-
 }
+
